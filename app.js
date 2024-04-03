@@ -7,7 +7,7 @@ const { v4 } = require('uuid');
 
 
 /* middlewares*/
-app.use('/css', express.static(__dirname + "/server/assets/css/"));
+app.use('/css', express.static(__dirname + "/public/assets/css/"));
 
 
 /* Rutas */
@@ -19,7 +19,16 @@ app.get('/', (req , res) => {
     }
 })
 
+app.get('/process', async (req , res) =>{
+    try {
+        
 
+
+        
+    } catch (error) {
+        res.status(500).send(error.message); 
+    }
+} )
 
 /* Levantar servidor */
 app.listen (PORT, () =>{

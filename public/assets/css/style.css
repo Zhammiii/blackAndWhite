@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: white;
   font-family: system-ui;
 }
 
@@ -28,7 +27,8 @@ body {
   border-radius: 20px;
 }
 
-.app h1 {
+.app h1 { 
+  color: white;
   font-size: 32px;
 }
 
