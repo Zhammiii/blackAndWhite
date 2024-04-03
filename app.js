@@ -19,10 +19,10 @@ app.get("/", (req, res) => {
 
 app.get("/process", async (req, res) => {
   try {
-    let urlData = req.query.urlData; 
+    let urlData = req.query.urlData;
     console.log(urlData);
     if (!urlData) {
-      throw new Error("Missing URL data");
+      throw new Error("upps! te falto la url");
     }
     res.setHeader("Content-Type", "image/png");
     const imagen = await Jimp.read(urlData);
